@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset= utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
+    />
+
+    <link rel="stylesheet" href="./CSS/FallyExam2.css" />
+    <link rel="stylesheet" href="./CSS/normal.css" />
+    <script src="JavaScript/jquery-3.3.1.js"></script>
+    <title>湖南城市学院-官网首页</title>
+    <!-- 引入ico图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/title" />
+  </head>
+  <body>
+    <header class="Header">
+      <ul>
+        <li style="margin-left: 300px; font-size: 16px; width: 100px">
+          <a href="#">学院首页</a>
+        </li>
+        <li><a href="#">通知公告</a></li>
+        <li><a href="#">学院新闻</a></li>
+        <li><a href="#">专业指导</a></li>
+        <li><a href="#">最新动态</a></li>
+        <span>当前时间：</span>
+        <li id="div1" style="width: 180px">yyyy-MM-dd hh:mm:ss</li>
+      </ul>
+      <nav style="position: absolute; left: 0px; top: 0px">
+        <img src="./img/hncu_logo.png" style="width: 250px; height: auto" />
+      </nav>
+      <form class="search" method="POST" action="#">
+        <!-- 二级 -->
+        <!-- 搜索框 -->
+        <label for="user_name">搜索</label>
+        <input
+          type="text"
+          id="user_name"
+          name="user_name"
+          placeholder="search"
+        />
+      </form>
+    </header>
+    <div style="width: 100%; height: 598px; background: #f7f7f7">
+      <div class="container">
+        <div class="list" style="left: -1200px">
+          <img src="img/3.png" />
+          <img src="img/1.png" />
+          <img src="img/2.png" />
+          <img src="img/3.png" />
+          <img src="img/1.png" />
+          <img src="img/2.png" />
+        </div>
+        <ul class="dots">
+          <li index="1" class="active dot"></li>
+          <li index="2" class="dot"></li>
+          <li index="3" class="dot"></li>
+        </ul>
+        <div class="pre">《</div>
+        <div class="next">》</div>
+        <div class="aside-allCategory">
+          <ul>
+            <li>
+              学院概况
+              <span class="pop"
+                ><strong>简介</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">学院简介</a></li>
+                  <li><a href="#">学校荣誉</a></li>
+                  <li><a href="#">现任领导</a></li>
+                  <li><a href="#">组织机构</a></li>
+                </ul>
+                <br /><strong>景色</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">校园风光</a></li>
+                  <li><a href="#">领导关怀</a></li>
+                  <li><a href="#">专家治校</a></li>
+                  <li><a href="#">媒体报道</a></li>
+                </ul>
+              </span>
+            </li>
+            <li>
+              管理服务
+              <span class="pop"
+                ><strong>宣传</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">党政办</a></li>
+                  <li><a href="#">宣传统战部</a></li>
+                  <li><a href="#">教务处</a></li>
+                </ul>
+                <br /><strong>事物管理</strong>
+                <hr style="width: 305px" />
+                <br />
+                <ul>
+                  <li style="width: 120px"><a href="#">质量管理办公室</a></li>
+                  <li><a href="#">学工处</a></li>
+                  <li><a href="#">招生处</a></li>
+                </ul>
+                <br />
+                <strong>就业服务</strong>
+                <hr style="width: 305px" />
+                <br />
+                <ul>
+                  <li style="width: 120px"><a href="#">就业指导中心</a></li>
+                  <li style="width: 120px"><a href="#">继续教育学院</a></li>
+                  <li><a href="#">科研处</a></li>
+                </ul>
+                <br />
+                <strong>规划管理</strong>
+                <hr style="width: 305px" />
+                <br />
+                <ul>
+                  <li><a href="#">发展规划处</a></li>
+                  <li><a href="#">校企合作办</a></li>
+                  <li style="width: 120px"><a href="#">信息化办公室</a></li>
+                  <li><a href="#">实训中心</a></li>
+                </ul>
+              </span>
+            </li>
+            <li>
+              教学科研
+              <span class="pop"
+                ><strong>动态</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">岗位职责</a></li>
+                  <li><a href="#">规划制度</a></li>
+                  <li><a href="#">教务动态</a></li>
+                  <li><a href="#">教学督导</a></li>
+                </ul>
+                <br />
+                <strong>其它服务</strong>
+                <hr style="width: 305px" />
+                <br />
+                <ul>
+                  <li><a href="#">国际交流处</a></li>
+                  <li><a href="#">组织人事处</a></li>
+                  <li><a href="#">后勤处</a></li>
+                  <li><a href="#">保卫处</a></li>
+                </ul>
+              </span>
+            </li>
+            <li>
+              学工在线
+              <span class="pop"
+                ><strong>概况</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">部门概况</a></li>
+                  <li><a href="#">学工动态</a></li>
+                  <li><a href="#">规章制度</a></li>
+                  <li><a href="#">常用表格</a></li>
+                </ul>
+                <br /><strong>集锦</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">荣誉集锦</a></li>
+                  <li><a href="#">学工简报</a></li>
+                  <li><a href="#">心理园地</a></li>
+                </ul>
+              </span>
+            </li>
+            <li>
+              招生网
+              <span class="pop"
+                ><strong>通知</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">单招信息网</a></li>
+                  <li><a href="#">招生简章</a></li>
+                  <li><a href="#">通知公告</a></li>
+                  <li><a href="#">政策法规</a></li>
+                </ul>
+                <br /><strong>介绍</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">招生信息</a></li>
+                  <li><a href="#">专业介绍</a></li>
+                  <li><a href="#">网上报名</a></li>
+                </ul>
+              </span>
+            </li>
+            <li>
+              党建政地
+              <span class="pop"
+                ><strong>创文</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">新闻动态</a></li>
+                  <li><a href="#">创先争优</a></li>
+                  <li style="width: 120px"><a href="#">思想政治教育</a></li>
+                  <li><a href="#">党建知识</a></li>
+                </ul>
+                <br /><strong>建设</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">表彰奖励</a></li>
+                  <li><a href="#">制度建设</a></li>
+                </ul>
+              </span>
+            </li>
+            <li>
+              网上看校
+              <span class="pop"
+                ><strong>校园</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">校容校貌篇</a></li>
+                  <li><a href="#">生活设施篇</a></li>
+                  <li><a href="#">实习实训篇</a></li>
+                  <li><a href="#">体育设施篇</a></li>
+                </ul>
+                <br /><strong>风光</strong>
+                <hr />
+                <br />
+                <ul>
+                  <li><a href="#">校园文化篇</a></li>
+                  <li><a href="#">校企合作篇</a></li>
+                </ul>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="clear"></div>
+
+    <div class="clear"></div>
+    <div class="Message">
+      <h3>
+        <div
+          style="
+            background: url(img/class.png) no-repeat;
+            background-size: 30px 30px;
+          "
+        ></div>
+        <strong>城院动态</strong>
+      </h3>
+      <div class="state">
+        <label>学院新闻</label>
+        <h4 style="float: left"><br />&emsp;2024-01-10&emsp;&nbsp;</h4>
+        <div
+          style="
+            font-size: 12px;
+            text-align: left;
+            width: 332px;
+            line-height: 24px;
+          "
+        >
+          <ul>
+            <li>
+              <a href="#"
+                >1.
+                近日，我校市政与测绘工程学院建筑环境与能源应用工程专业2020级本科生彭德用...</a
+              >
+            </li>
+            <li>
+              <a href="#">2. 这32位国家奖学金获得者，亮相‼</a>
+            </li>
+            <li>
+              <a href="#"
+                >3.
+                值此辞旧迎新之际，我们谨代表学校党委行政向广大师生员工、离退休老同志、海内...</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >4.
+                湖南城市学院100余名大学生自发来到校园无偿献血点，以献血...</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >5.学校派送167台次公交车将学子们送往益阳师范高等专...</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          style="
+            color: rgb(115, 175, 244);
+            font-size: 12px;
+            position: relative;
+            top: -10px;
+            left: -3px;
+          "
+        >
+          浏览120&emsp;推荐21&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<a
+            href="#"
+            >阅读全文→</a
+          >
+        </div>
+      </div>
+      <div class="state">
+        <label>学院新闻</label>
+        <h4 style="float: left"><br />&emsp;2024-01-10&emsp;&nbsp;</h4>
+        <div
+          style="
+            font-size: 12px;
+            text-align: left;
+            width: 332px;
+            line-height: 24px;
+          "
+        >
+          <ul>
+            <li>
+              <a href="#"
+                >1.
+                近日，我校市政与测绘工程学院建筑环境与能源应用工程专业2020级本科生彭德用...</a
+              >
+            </li>
+            <li>
+              <a href="#">2. 这32位国家奖学金获得者，亮相‼</a>
+            </li>
+            <li>
+              <a href="#"
+                >3.
+                值此辞旧迎新之际，我们谨代表学校党委行政向广大师生员工、离退休老同志、海内...</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >4.
+                湖南城市学院100余名大学生自发来到校园无偿献血点，以献血...</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >5.学校派送167台次公交车将学子们送往益阳师范高等专...</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          style="
+            color: rgb(115, 175, 244);
+            font-size: 12px;
+            position: relative;
+            top: -10px;
+            left: -3px;
+          "
+        >
+          浏览120&emsp;推荐21&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<a
+            href="#"
+            >阅读全文→</a
+          >
+        </div>
+      </div>
+      <div class="state">
+        <label>学院新闻</label>
+        <h4 style="float: left"><br />&emsp;2024-01-10&emsp;&nbsp;</h4>
+        <div
+          style="
+            font-size: 12px;
+            text-align: left;
+            width: 332px;
+            line-height: 24px;
+          "
+        >
+          <ul>
+            <li>
+              <a href="#"
+                >1.
+                近日，我校市政与测绘工程学院建筑环境与能源应用工程专业2020级本科生彭德用...</a
+              >
+            </li>
+            <li>
+              <a href="#">2. 这32位国家奖学金获得者，亮相‼</a>
+            </li>
+            <li>
+              <a href="#"
+                >3.
+                值此辞旧迎新之际，我们谨代表学校党委行政向广大师生员工、离退休老同志、海内...</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >4.
+                湖南城市学院100余名大学生自发来到校园无偿献血点，以献血...</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >5.学校派送167台次公交车将学子们送往益阳师范高等专...</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          style="
+            color: rgb(115, 175, 244);
+            font-size: 12px;
+            position: relative;
+            top: -10px;
+            left: -3px;
+          "
+        >
+          浏览120&emsp;推荐21&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<a
+            href="#"
+            >阅读全文→</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </body>
+  <script language="JavaScript" src="JavaScript/dynamic.js"></script>
+</html>

@@ -1,0 +1,207 @@
+@import './basic.scss';
+.mask {
+  // 蒙版
+  color: $font_color;
+  text-align: center;
+  line-height: 3.125vw;
+  font-size: $news_font_size;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  height: 3.125vw;
+  position: absolute;
+  top: 28.1vw;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header {
+  .top {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    background-color: $basic_color;
+    // opacity: 0.8;
+    .hncu_logo {
+      padding: 1.0417vw;
+      img {
+        width: 13.0208vw;
+        height: $top_h;
+      }
+    }
+    .nav {
+      ul {
+        margin-top: 1.0417vw;
+        height: $top_h;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        li {
+          text-align: center;
+          line-height: $top_h;
+          font-size: $title_font_size;
+          font-weight: 600;
+        }
+      }
+    }
+    .login {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      vertical-align: middle;
+      .user_info {
+        cursor: pointer;
+        h3 {
+          height: $top_h;
+          line-height: $top_h;
+        }
+      }
+      .avatar {
+        justify-self: end;
+        // 垂直居中
+        align-self: center;
+        height: $top_h;
+        position: relative;
+        margin-right: 0.5208vw;
+        img {
+          width: $icon_h;
+          height: $icon_h;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .dialog {
+        position: absolute;
+        top: 5.4167vw;
+        right: 0.2604vw;
+        width: 13.5417vw;
+        height: 10.4167vw;
+        border: 1px #ccc solid;
+        border-radius: 10%;
+        background-color: #ccc;
+        opacity: 0.6;
+        img {
+          width: 2.6042vw;
+          height: 2.6042vw;
+          box-shadow: 0 5px 5px #333;
+          border-radius: 50%;
+        }
+        p {
+          margin-bottom: -1.3417vw;
+        }
+      }
+    }
+  }
+}
+
+section {
+  .banner {
+    border-top: 0.2604vw solid cadetblue;
+    /* 避免因窗口变化影响图片效果 */
+
+    width: 100%;
+    margin: 0 auto;
+    background-color: red;
+
+    .img {
+      height: 46.875vw;
+      width: 100%;
+      margin: 0 auto;
+      display: none;
+    }
+  }
+  .school_news {
+    margin: 0.0521vw;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    .left {
+      justify-self: start;
+      margin-top: 5.7292vw;
+
+      .des_img {
+        position: absolute;
+        top: 40.625vw;
+        left: 0.5208vw;
+        img {
+          width: 48.6667vw;
+        }
+      }
+      .news_img {
+        margin-top: 2.5vw;
+        position: relative;
+        transition: transform 0.6s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+        img {
+          width: 48.6667vw;
+          height: 31.25vw;
+        }
+      }
+      .bottom_new {
+        text-align: left;
+        li {
+          margin-top: 0.6771vw;
+          display: grid;
+          grid-template-columns: 80% 20%;
+          color: $news_color;
+          a {
+            color: $news_color;
+            &:hover {
+              color: $basic_color;
+            }
+          }
+          span {
+            justify-self: end;
+          }
+        }
+      }
+    }
+    .right {
+      justify-self: end;
+      color: $basic_color;
+      border-radius: 10%;
+
+      .news_list {
+        text-align: left;
+
+        ul {
+          li {
+            position: relative;
+            &::before {
+              content: '';
+              display: block;
+              position: absolute;
+              border-radius: 1.0417vw;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-image: url('../assets/img/noise.png');
+              opacity: 0.1;
+              z-index: -1;
+            }
+            a {
+              font-size: $news_font_size;
+              margin: 0 1.5625vw;
+              color: $news_color;
+              &:hover {
+                color: $basic_color;
+              }
+            }
+            .date {
+              text-align: right;
+              padding-right: 0.5208vw;
+              border-radius: 1.0417vw;
+              h2 {
+                color: $basic_color;
+              }
+              h4 {
+                color: #b9c1c4;
+              }
+              width: 8vw;
+              background-color: rgba(3, 30, 74, 0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+}

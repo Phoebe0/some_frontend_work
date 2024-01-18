@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>剩菜盲盒(SC.COM)-低价、惊喜、及时、轻松！</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+    />
+
+    <!-- 引入ico图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/title" />
+    <!-- 头部和底部结构基本相同，这里引入基本的公共样式 -->
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <!-- 引入专属的首页样式 -->
+    <link rel="stylesheet" href="css/mod.css" />
+    <!-- 引入商品详情页样式 -->
+    <link rel="stylesheet" href="css/goods.css" />
+  </head>
+  <body>
+    <!--header部分开始-->
+    <header>
+      <div class="w">
+        <a href="#">
+          <img src="images/1.jpg" height="80" width="1190" alt="" />
+        </a>
+      </div>
+    </header>
+    <!-- header部分结束 -->
+    <!-- 快速导航栏开始 -->
+    <div class="shortcut">
+      <div class="w">
+        <ul class="fl city">
+          <li>
+            <i class="f10"><img src="images/2.png" /></i>上海
+          </li>
+        </ul>
+        <ul class="fr">
+          <li>
+            <a href="#">你好，请登录</a>
+            <a href="#" class="f10">免费注册</a>
+          </li>
+          <li class="space"></li>
+          <li>
+            <a href="#">我的订单</a>
+          </li>
+          <li class="space"></li>
+          <li>
+            <a href="#">我的盲盒 ∨</a>
+            <i> </i>
+          </li>
+          <li class="space"></li>
+          <li>
+            <a href="#">剩菜会员</a>
+          </li>
+          <li class="space"></li>
+          <li>
+            <a href="#">学生盲盒 ∨</a>
+          </li>
+          <li class="space"></li>
+          <li>
+            <a href="#">后台服务 ∨</a>
+            <i> </i>
+          </li>
+          <li class="space"></li>
+          <li>
+            <a href="#">网站导航 ∨</a>
+            <i> </i>
+          </li>
+          <li class="space"></li>
+          <li>
+            <a href="#" class="mobile" onclick="isErCodeShow()"
+              >手机盲盒
+              <img
+                class="er_code"
+                src="images/mobile.png"
+                height="60"
+                width="60"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--快速导航栏结束 -->
+    <!-- 头部中间部分开始 -->
+    <div class="w middle">
+      <div class="logo">
+        <h1>
+          <a href="#"></a>
+        </h1>
+      </div>
+      <!-- 搜索 -->
+      <div class="form">
+        <input type="text" placeholder="html5+css3+JavaScript" />
+        <button>
+          <i
+            ><a href="#"><img src="images/5.png" width="30" /></a
+          ></i>
+        </button>
+      </div>
+      <!-- 购物车 -->
+      <div class="shopCar">
+        <i> </i><a href="#" class="f10">购物车</a> <span>99</span>
+      </div>
+      <!-- 关键词 -->
+      <div class="hotwords">
+        <a href="#" class="f10">满99减10元</a>
+        <a href="#">今日疯抢</a>
+        <a href="#">时令新品</a>
+        <a href="#">宝妈严选</a>
+        <a href="#">食力好物</a>
+        <a href="#">一人食</a>
+        <a href="#">车厘子</a>
+        <a href="#">发现好货</a>
+        <a href="#">地道美味</a>
+      </div>
+      <!-- 小导航部分 -->
+      <div class="navitems">
+        <ul>
+          <li><a href="#" class="f10">秒杀</a></li>
+          <li><a href="#" class="f10">优惠券</a></li>
+          <li><a href="#">剩菜会员</a></li>
+          <li><a href="#">千元盲盒</a></li>
+          <li><a href="#">百元盲盒</a></li>
+          <li><a href="#">十元盲盒</a></li>
+          <li><a href="#">免费盲盒</a></li>
+        </ul>
+      </div>
+      <!-- 超级日部分 -->
+      <!-- <div class="super">
+        <a href="#"
+          ><img src="images/super.png" height="40" width="190" alt=""
+        /></a>
+      </div> -->
+    </div>
+    <!-- 头部中间部分结束 -->
+    <!-- 中间分类区域开始 -->
+    <div class="w grid">
+      <div class="grid-col1 fl">
+        <div class="ad">
+          <img src="images/ad-l.png" height="480" width="250" alt="" />
+          <div class="ad-r"></div>
+        </div>
+        <ul>
+          <li><a href="#" style="font-weight: 600">美味麒麟榜</a></li>
+          <li>
+            <a href="#">闭眼入</a>/<a href="#">中式面食</a>/<a href="#">水产</a>
+          </li>
+          <li>
+            <a href="#">酒水饮料</a>/<a href="#">碳酸</a>/<a href="#">啤酒</a>
+          </li>
+          <li>
+            <a href="#">肉禽蛋</a>/<a href="#">日日鲜</a>/<a href="#">有机</a>
+          </li>
+          <li>
+            <a href="#">水产海鲜</a>/<a href="#">鱼</a>/<a href="#">虾</a>
+          </li>
+          <li>
+            <a href="#">水果</a>/<a href="#">当季新品</a>/<a href="#">特惠</a>
+          </li>
+          <li>
+            <a href="#">乳品</a>/<a href="#">鲜奶</a>/<a href="#">黄油奶酪</a>
+          </li>
+          <li>
+            <a href="#">烘焙</a>/<a href="#">蛋糕甜品</a>/<a href="#">吐司</a>
+          </li>
+          <li>
+            <a href="#">面点</a>/<a href="#">饺子</a>/<a href="#">包子</a>
+          </li>
+          <li>
+            <a href="#">粮油</a>/<a href="#">火锅调料</a>/<a href="#">料酒</a>
+          </li>
+          <li>
+            <a href="#">艺术</a>/<a href="#">礼品鲜花</a>/<a href="#"
+              >农资绿植</a
+            >
+          </li>
+          <li>
+            <a href="#">医药</a>/<a href="#">计生</a>/<a href="#">情趣</a>
+          </li>
+          <li>
+            <a href="#">零食</a>/<a href="#">坚果</a>/<a href="#">蜜饯</a>
+          </li>
+          <li>
+            <a href="#">火锅到家</a>/<a href="#">毛肚</a>/<a href="#">豆制品</a>
+          </li>
+          <li>
+            <a href="#">严选</a>/<a href="#">儿童早餐</a>/<a href="#">新品</a>
+          </li>
+          <li>
+            <a href="#">速食</a>/<a href="#">方便面</a>/<a href="#">火腿</a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid-col2 fl">
+        <div class="grid-col2-t">
+          <div class="imgBox">
+            <!-- alt：图片路径失败时替换显示内容 -->
+            <a href="#"
+              ><img
+                class="img-slide img"
+                src="images/3.jpg"
+                height="340"
+                width="790"
+                alt="img1"
+            /></a>
+            <a href="#"
+              ><img
+                class="img-slide img"
+                src="images/4.jpg"
+                height="340"
+                width="790"
+                alt="img1"
+            /></a>
+            <a href="#"
+              ><img
+                class="img-slide img"
+                src="images/6.jpg"
+                height="340"
+                width="790"
+                alt="img1"
+            /></a>
+            <a href="#"
+              ><img
+                class="img-slide img"
+                src="images/7.jpg"
+                height="340"
+                width="790"
+                alt="img1"
+            /></a>
+            <a href="#"
+              ><img
+                class="img-slide img"
+                src="images/9.jpg"
+                height="340"
+                width="790"
+                alt="img1"
+            /></a>
+            <a href="#"
+              ><img
+                class="img-slide img"
+                src="images/10.jpg"
+                height="340"
+                width="790"
+                alt="img1"
+            /></a>
+          </div>
+
+          <a href="#" class="arrow-l"><</a>
+          <a href="#" class="arrow-r">></a>
+          <ul class="circle">
+            <li></li>
+            <li></li>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="grid-col2-b">
+          <div><img src="images/3.jpg" height="130" width="390" alt="" /></div>
+          <div><img src="images/4.jpg" height="130" width="390" alt="" /></div>
+        </div>
+      </div>
+      <div class="grid-col3 fr">
+        <!-- 登录模块 -->
+        <div class="login">
+          <div class="login-t">
+            Hi~欢迎光临剩菜盲盒！<br />
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#" class="user-info">
+              <img src="images/no_login.jpg" alt="" />
+            </a>
+          </div>
+          <div class="login-b">
+            <a href="#">新人福利</a>
+            <a href="#">成为会员</a>
+          </div>
+        </div>
+        <!-- 新闻模块 -->
+        <div class="news">
+          <div class="news-t">
+            <a href="#" class="cuxiao">促销</a>
+            <a href="#" class="gg">公告</a>
+            <a href="#" class="more">更多</a>
+            <div></div>
+          </div>
+          <div class="news-b">
+            <ul>
+              <li><a href="#">欢迎选购盲盒</a></li>
+              <li><a href="#">春季新品</a></li>
+              <li><a href="#">邀请好友</a></li>
+              <li><a href="#">惊喜盲盒</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 服务扩展模块 -->
+        <div class="expand">
+          <ul>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                <span>手机</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 中间分类区域结束 -->
+    <!-- 商品挑选 -->
+    <div class="buy_goods">
+      <p>盲盒挑选</p>
+    </div>
+    <div class="w goods">
+      <ul>
+        <li>
+          <img src="./images/shengnvguo.jpg" alt="" />
+          <div class="detail">
+            <h4>番茄盲盒</h4>
+            <p class="introd">胡萝卜素 | 维生素C</p>
+            <p class="price">￥ 100</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/baicai.jpg" alt="" />
+          <div class="detail">
+            <h4>白菜盲盒</h4>
+            <p class="introd">新鲜 | 维生素C</p>
+            <p class="price">￥ 10</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/tudou.jpg" alt="" />
+          <div class="detail">
+            <h4>土豆盲盒</h4>
+            <p class="introd">淀粉 | 维生素C</p>
+            <p class="price">￥ 99</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/suanmiao.jpeg" alt="" />
+          <div class="detail">
+            <h4>蒜苗盲盒</h4>
+            <p class="introd">辛辣 | 爽脆</p>
+            <p class="price">￥ 90</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/tiaowei.jpg" alt="" />
+          <div class="detail">
+            <h4>佐料盲盒</h4>
+            <p class="introd">葱姜蒜 | 维生素C</p>
+            <p class="price">￥ 100</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/yumi.jpg" alt="" />
+          <div class="detail">
+            <h4>玉米盲盒</h4>
+            <p class="introd">胡萝卜素 | 维生素C</p>
+            <p class="price">￥ 100</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/huotui.jpg" alt="" />
+          <div class="detail">
+            <h4>火腿盲盒</h4>
+            <p class="introd">肉类 | 营养</p>
+            <p class="price">￥ 100</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/qingshi.jpg" alt="" />
+          <div class="detail">
+            <h4>轻食盲盒</h4>
+            <p class="introd">减脂 | 健康</p>
+            <p class="price">￥ 100</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/shuiguo.jpg" alt="" />
+          <div class="detail">
+            <h4>水果盲盒</h4>
+            <p class="introd">水嫩 | 维生素C</p>
+            <p class="price">￥ 100</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/kaoya.jpg" alt="" />
+          <div class="detail">
+            <h4>烤鸭盲盒</h4>
+            <p class="introd">香气 | 美味</p>
+            <p class="price">￥ 200</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 页面底部分开始 -->
+    <footer>
+      <!-- 服务模块 -->
+      <div class="service">
+        <div class="w">
+          <ul>
+            <li>
+              <h5>多</h5>
+              <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+              <h5>多</h5>
+              <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+              <h5>多</h5>
+              <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+              <h5>多</h5>
+              <p>品类齐全，轻松购物</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 帮助模块 -->
+      <div class="w help">
+        <div class="fl">
+          <dl>
+            <dt>购物指南</dt>
+            <dd><a href="#">购物流程</a></dd>
+            <dd><a href="#">会员介绍</a></dd>
+            <dd><a href="#">生活旅行</a></dd>
+            <dd><a href="#">常见问题</a></dd>
+            <dd><a href="#">盲盒优选</a></dd>
+            <dd><a href="#">联系客服</a></dd>
+          </dl>
+          <dl>
+            <dt>配送方式</dt>
+            <dd><a href="#">上门自提</a></dd>
+            <dd><a href="#">211限时达</a></dd>
+            <dd><a href="#">配送服务查询</a></dd>
+            <dd><a href="#">配送费收去标准</a></dd>
+            <dd><a href="#">海外配送</a></dd>
+          </dl>
+          <dl>
+            <dt>支付方式</dt>
+            <dd><a href="#">货到付款</a></dd>
+            <dd><a href="#">在线支付</a></dd>
+            <dd><a href="#">分期付款</a></dd>
+            <dd><a href="#">公司转账</a></dd>
+          </dl>
+          <dl>
+            <dt>售后服务</dt>
+            <dd><a href="#">售后政策</a></dd>
+            <dd><a href="#">价格保护</a></dd>
+            <dd><a href="#">退款说明</a></dd>
+            <dd><a href="#">返修/退换货</a></dd>
+            <dd><a href="#">取消订单</a></dd>
+          </dl>
+        </div>
+        <div class="fr coverage">
+          <h5>剩菜盲盒</h5>
+          <p>剩菜盲盒已向全国26市区提供自营配送服务，支持货到付款。</p>
+          <a href="#">查看详情 > </a>
+        </div>
+      </div>
+
+      <div class="w copyright">
+        <p>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+          <span>｜</span>
+          <a href="#">关于我们</a>
+        </p>
+        <div>
+          <p>
+            京公网安备
+            11000002000088号<span>｜</span>京ICP证070359号<span>｜</span>互联网药品信息服务资格证编号(京)-经营性-2014-0008<span>｜</span>新出发京零
+            字第大120007号
+          </p>
+          <p>
+            互联网出版许可证编号新出网证(京)字150号<span>｜</span>出版经营许可证<span>｜</span>网络文化经营许可证京网文[2014]2148-348号<span>｜</span>违法和不良信息举报电话：4006561155
+          </p>
+          <p>
+            Copyright ©2004 - 2017 剩菜盲盒
+            版权所有|消费者维权热线：4006067733经营证照
+          </p>
+        </div>
+        <p class="foot-icon">
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </p>
+      </div>
+    </footer>
+    <!-- 页面底部分结束 -->
+  </body>
+  <script src="./js/index.js"></script>
+</html>

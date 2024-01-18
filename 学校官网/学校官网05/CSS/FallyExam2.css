@@ -1,0 +1,267 @@
+.container {
+  width: 1200px;
+  margin: auto;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px;
+  border-radius: 10px;
+  top: 70px;
+}
+.list {
+  width: 8400px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+}
+img {
+  float: left;
+  width: 1200px;
+  height: 500px;
+}
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  list-style: none;
+}
+.dots li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(218, 217, 217);
+  margin-left: 5px;
+}
+.dots .active {
+  background: white;
+}
+.pre,
+.next {
+  position: absolute;
+  top: 43%;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  background: rgba(7, 17, 27, 0);
+  /* display:none;*/
+}
+.pre:hover,
+.next:hover {
+  position: absolute;
+  top: 43%;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  background: rgba(7, 17, 27, 0.6);
+  /* display:none;*/
+}
+.pre {
+  left: 193px;
+}
+.next {
+  right: 20px;
+}
+.pre_90 {
+  transform: rotate(90deg);
+  width: 30px;
+  height: 40px;
+}
+.next_90 {
+  transform: rotate(-90deg);
+  width: 30px;
+  height: 40px;
+}
+.Header {
+  position: absolute;
+  width: 100%;
+  height: 73px;
+  background: #b3ccec;
+}
+.Header ul {
+  position: relative;
+}
+.Header ul li {
+  width: 100px;
+  height: 60px;
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  font-size: 16px;
+  line-height: 60px;
+}
+.Header a {
+  text-decoration: none;
+  color: #3e528b;
+}
+.Header a:hover {
+  color: #d73c3c;
+}
+form.search {
+  position: absolute;
+  width: 150px;
+  top: 20px;
+  right: 20px;
+}
+
+.search input {
+  float: right;
+  width: 70px;
+  padding: 2px 0px 3px 5px;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro', helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #888;
+  outline: none;
+  transition: 2s width;
+}
+
+.search input:focus {
+  width: 150px;
+}
+.search label {
+  display: none;
+}
+form.search input {
+  background-color: #fff;
+}
+form.search input::-webkit-input-placeholder {
+  color: #ccc;
+}
+.aside-allCategory {
+  background: rgba(43, 51, 59, 0.9);
+  width: 173px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  border-radius: 10px 0px 0px 10px;
+}
+.aside-allCategory ul {
+  position: relative;
+  top: 20px;
+}
+.aside-allCategory ul li {
+  color: rgba(255, 255, 255, 0.6);
+  width: 173px;
+  height: 40px;
+  list-style-type: none;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+}
+.aside-allCategory ul li:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  & .pop {
+    display: block;
+  }
+}
+.pop {
+  display: none;
+  position: absolute;
+  top: -21px;
+  left: 173px;
+  height: 500px;
+  width: 400px;
+  color: rgb(106, 168, 234);
+  background: rgba(0, 0, 0, 0.6);
+}
+.pop ul li {
+  display: inline-block;
+  width: 80px;
+}
+.pop strong {
+  float: left;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  font-size: 15px;
+}
+.pop hr {
+  position: relative;
+  top: 30px;
+  left: 15px;
+  width: 340px;
+}
+.pop ul li:hover {
+  background: #319f94;
+}
+.pop ul li a {
+  font-size: 14px;
+  color: #fff8f8;
+  text-decoration: none;
+}
+.pop ul li a:hover {
+  color: #ff6600;
+}
+
+.clear {
+  clear: both;
+}
+
+.Message {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  text-align: center;
+  background: #f7f7f7;
+  top: 0px;
+  font-size: 18px;
+  color: #373838;
+  letter-spacing: 3px;
+  line-height: 36px;
+}
+.Message div {
+  display: inline-block;
+}
+.Message a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #181718;
+}
+.Message a:hover {
+  color: #13678b;
+}
+.Message h3 {
+  text-align: center;
+  width: 100%;
+  height: 20px;
+}
+.Message h3 div {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  top: 12px;
+}
+.state {
+  margin-right: 30px;
+  position: relative;
+  top: 60px;
+  width: 372px;
+  height: 400px;
+  background: #e1eeff;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 10px;
+  text-align: center;
+}
+.state:hover {
+  box-shadow: 0 10px 26px 0 rgba(48, 146, 244, 0.6);
+}
+.state label {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 100px;
+  height: 34px;
+  font-size: 16px;
+  color: #333232;
+  line-height: 34px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0 12px;
+  margin-bottom: 8px;
+}

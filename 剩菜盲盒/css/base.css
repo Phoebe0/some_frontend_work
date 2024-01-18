@@ -1,0 +1,358 @@
+img {
+  /* display: block; */
+  vertical-align: top; /* 解决图片底测有空白缝隙的问题 */
+}
+.w {
+  /*版心的公共类*/
+  width: 1190px; /*京东的版心是1190px*/
+  margin: 0 auto; /*将版心居中*/
+}
+/*浮动的公共类*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+a {
+  text-decoration: none; /*取消链接默认下划线*/
+  font-size: 12px;
+  color: #999999;
+}
+a:hover {
+  /*鼠标放到链接上的颜色*/
+  color: #11af0b;
+}
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0; /*清除内边距*/
+  padding: 0;
+}
+input,
+button {
+  border: 0;
+  outline: none; /*取消蓝色的轮廓边框*/
+}
+ul {
+  list-style: none; /*清除列表样式*/
+  /*    margin: 0; 清除内外边距
+        padding: 0;*/
+}
+body {
+  background-color: #f6f6f6; /*整个页面的背景颜色*/
+}
+/*header开始*/
+header {
+  height: 80px;
+  background-color: rgb(196, 157, 116);
+}
+/*header结束*/
+/*快速导航栏开始*/
+.shortcut {
+  /*定义快捷方式*/
+  height: 30px; /*没有高度撑开，不会显示*/
+  line-height: 30px; /*行高=容器高，可以使字体居中*/
+  background-color: #e3e4e5;
+  border-bottom: 1px solid #ddd; /*solid实线，颜色*/
+  font-size: 12px; /*导航栏中字体大小*/
+  color: #999999; /*字体颜色*/
+}
+.shortcut i {
+  /*调用字体*/
+  font-family: icomoon;
+  font-style: normal; /*字体标准，不倾斜*/
+}
+.city {
+  /*定义北京的左外边距，给logo倒出位置*/
+  margin-left: 200px;
+}
+.shortcut li {
+  float: left;
+}
+.space {
+  /*间隔的小竖线*/
+  width: 1px;
+  height: 10px;
+  background-color: #cccccc;
+  margin: 10px 12px 0;
+}
+.f10 {
+  /*常用的红色单独定义出来*/
+  color: rgb(0, 255, 140);
+}
+.mobile {
+  /*可移动的位置*/
+  position: relative; /*相对的*/
+}
+.mobile img {
+  position: absolute; /*任何元素任意定位*/
+  left: -3px;
+  top: 24px;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+/*快速导航栏结束*/
+/*头部中间部分开始*/
+.middle {
+  height: 140px;
+  position: relative;
+}
+.logo {
+  position: absolute; /*任何元素任意定位*/
+  top: -30px;
+  left: 0;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.3);
+}
+.logo a {
+  display: block; /*此元素将显示为块级元素，此元素前后会带有换行符。*/
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  background-image: url('../images/logo.png');
+  background-size: cover;
+  /* background: white url('../images/logo.png') no-repeat; no-repeat不会出现平铺或重复的现象 */
+}
+/*搜索框*/
+.form {
+  width: 550px;
+  height: 35px;
+  position: absolute;
+  top: 25px;
+  left: 320px;
+}
+.form input {
+  width: 495px;
+  height: 33px;
+  border: 1px solid #58b317;
+  float: left;
+  font-size: 14px;
+  padding-left: 3px;
+}
+.form button {
+  width: 50px;
+  height: 35px;
+  background-color: #ffffff;
+  float: left;
+}
+.form button i {
+  font-family: 'icomoon'; /*字体*/
+  font-style: normal; /*默认字体样式*/
+  color: white;
+}
+/* 购物车 */
+.shopCar {
+  width: 188px;
+  height: 33px;
+  line-height: 33px; /*设置行间的距离（行高）*/
+  border: 1px solid #cccccc;
+  position: absolute; /*任何元素任意定位*/
+  top: 25px;
+  right: 95px;
+  background-color: white;
+  text-align: center;
+  color: #f10215;
+}
+.shopCar i {
+  font-family: icomoon;
+  margin-right: 5px;
+  font-style: normal; /*字体标准，不倾斜*/
+}
+.shopCar span {
+  width: 16px;
+  height: 16px;
+  background-color: #f10215;
+  border-radius: 50%; /*向 div 元素添加圆角边框*/
+  position: absolute; /* 加了绝对定位 固定定位 浮动的行内元素， 可以不用转换，直接给宽度和高度 */
+  top: 5px;
+  right: 30px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 15px; /*设置行间的距离（行高）*/
+}
+/* 关键词块 */
+.hotwords {
+  position: absolute;
+  top: 68px;
+  left: 320px;
+}
+/* 小导航模块 */
+.navitems {
+  width: 770px;
+  height: 40px;
+  position: absolute;
+  bottom: 0; /*把图像的底边缘设置在其包含元素底边缘之上 0 像素高的位置：*/
+  left: 200px;
+  line-height: 40px; /*设置行间的距离（行高）*/
+}
+.navitems li {
+  float: left;
+  margin-left: 25px;
+}
+.navitems li a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.navitems li a:hover {
+  /*选择鼠标指针浮动在其上的元素，并设置其样式：*/
+  color: #077b15;
+}
+
+/* 超级日 */
+.super {
+  position: absolute;
+  bottom: 10px; /* 离上面的距离*/
+  right: 0px;
+}
+/*头部中间部分结束*/
+/* 页面底部开始 */
+footer {
+  margin-top: 35px;
+  height: 500px;
+  background-color: #eaeaea;
+}
+footer a {
+  color: #666;
+}
+.service {
+  padding: 30px 0;
+  border-bottom: 1px solid #dedede;
+  overflow: hidden; /*内容会被修剪，并且其余内容是不可见的。*/ /* service 这个宽度继承了 父亲 190宽度 */
+}
+.service ul li {
+  width: 297px;
+  height: 43px;
+  position: relative;
+  line-height: 43px;
+  float: left;
+}
+.service li h5 {
+  position: absolute;
+  top: 0;
+  left: 38px;
+  width: 36px;
+  height: 43px;
+  background: url('../images/ico.png') no-repeat;
+  text-indent: -999em; /*将段落的第一行缩进 -999 像素*/
+}
+.service li:nth-child(2) h5 {
+  background-position: 0 -43px;
+}
+.service li:nth-child(3) h5 {
+  background-position: 0 -86px;
+}
+.service li:nth-child(4) h5 {
+  background-position: bottom;
+}
+.service li p {
+  font-weight: 700;
+  margin-left: 82px;
+}
+/* 帮助模块 */
+.help {
+  height: 200px;
+  border-bottom: 1px solid #dedede;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+.help dl {
+  width: 192px;
+  float: left;
+}
+.help dt,
+.coverage h5 {
+  height: 30px;
+  font-size: 14px;
+  color: #666;
+}
+.help dt {
+  font-weight: bold;
+}
+.help dd {
+  height: 22px;
+}
+
+/* 范围 */
+.coverage {
+  width: 200px;
+  height: 150px;
+  background: url(../images/ico_footer.png) no-repeat;
+}
+.coverage h5 {
+  padding-left: 35px;
+}
+.coverage p {
+  font-size: 12px;
+  color: #666;
+  line-height: 18px;
+  width: 180px;
+}
+.coverage a {
+  display: block;
+  margin-top: 5px;
+  width: 180px;
+  text-align: right;
+}
+/* 底部版权 */
+.copyright {
+  padding-top: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+.copyright span {
+  margin: 0 10px;
+}
+
+.copyright div {
+  margin-top: 20px;
+}
+.copyright div p {
+  line-height: 22px;
+}
+.foot-icon a {
+  display: inline-block;
+  width: 103px;
+  height: 33px;
+  background: url(../images/ico_footer.png) no-repeat 0 -150px;
+  margin: 20px 4px 0;
+  /* 行内块可以用 text-align: center 来实现居中 */
+}
+.foot-icon a:nth-child(2) {
+  background-position: -103px -150px;
+}
+.foot-icon a:nth-child(3) {
+  background-position: 0 -183px;
+}
+.foot-icon a:nth-child(4) {
+  background-position: -103px -183px;
+}
+.foot-icon a:nth-child(5) {
+  background-position: 0 -216px;
+}
+.foot-icon a:nth-child(6) {
+  background-position: -103px -216px;
+}
+/* 页面底部 结束*/

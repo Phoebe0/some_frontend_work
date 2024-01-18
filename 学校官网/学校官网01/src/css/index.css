@@ -1,0 +1,251 @@
+@charset "UTF-8";
+body {
+  /* 移除默认列表样式 */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: basic_font_size;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f0eded;
+}
+
+body ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body a {
+  color: #e4e2e4;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: #0693f8;
+}
+
+.mask {
+  color: #e4e2e4;
+  text-align: center;
+  line-height: 3.125vw;
+  font-size: 1.5625vw;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  height: 3.125vw;
+  position: absolute;
+  top: 28.1vw;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+header .top {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  background-color: #89afdf;
+}
+
+header .top .hncu_logo {
+  padding: 1.0417vw;
+}
+
+header .top .hncu_logo img {
+  width: 13.0208vw;
+  height: 3.125vw;
+}
+
+header .top .nav ul {
+  margin-top: 1.0417vw;
+  height: 3.125vw;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+header .top .nav ul li {
+  text-align: center;
+  line-height: 3.125vw;
+  font-size: 1.0417vw;
+  font-weight: 600;
+}
+
+header .top .login {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  vertical-align: middle;
+}
+
+header .top .login .user_info {
+  cursor: pointer;
+}
+
+header .top .login .user_info h3 {
+  height: 3.125vw;
+  line-height: 3.125vw;
+}
+
+header .top .login .avatar {
+  justify-self: end;
+  align-self: center;
+  height: 3.125vw;
+  position: relative;
+  margin-right: 0.5208vw;
+}
+
+header .top .login .avatar img {
+  width: 0.9375vw;
+  height: 0.9375vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header .top .login .dialog {
+  position: absolute;
+  top: 5.4167vw;
+  right: 0.2604vw;
+  width: 13.5417vw;
+  height: 10.4167vw;
+  border: 1px #ccc solid;
+  border-radius: 10%;
+  background-color: #ccc;
+  opacity: 0.6;
+}
+
+header .top .login .dialog img {
+  width: 2.6042vw;
+  height: 2.6042vw;
+  box-shadow: 0 5px 5px #333;
+  border-radius: 50%;
+}
+
+header .top .login .dialog p {
+  margin-bottom: -1.3417vw;
+}
+
+section .banner {
+  border-top: 0.2604vw solid cadetblue;
+  /* 避免因窗口变化影响图片效果 */
+  width: 100%;
+  margin: 0 auto;
+  background-color: red;
+}
+
+section .banner .img {
+  height: 46.875vw;
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+}
+
+section .school_news {
+  margin: 0.0521vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+section .school_news .left {
+  justify-self: start;
+  margin-top: 5.7292vw;
+}
+
+section .school_news .left .des_img {
+  position: absolute;
+  top: 40.625vw;
+  left: 0.5208vw;
+}
+
+section .school_news .left .des_img img {
+  width: 48.6667vw;
+}
+
+section .school_news .left .news_img {
+  margin-top: 2.5vw;
+  position: relative;
+  transition: transform 0.6s ease;
+}
+
+section .school_news .left .news_img:hover {
+  transform: scale(1.1);
+}
+
+section .school_news .left .news_img img {
+  width: 48.6667vw;
+  height: 31.25vw;
+}
+
+section .school_news .left .bottom_new {
+  text-align: left;
+}
+
+section .school_news .left .bottom_new li {
+  margin-top: 0.6771vw;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  color: #595555;
+}
+
+section .school_news .left .bottom_new li a {
+  color: #595555;
+}
+
+section .school_news .left .bottom_new li a:hover {
+  color: #89afdf;
+}
+
+section .school_news .left .bottom_new li span {
+  justify-self: end;
+}
+
+section .school_news .right {
+  justify-self: end;
+  color: #89afdf;
+  border-radius: 10%;
+}
+
+section .school_news .right .news_list {
+  text-align: left;
+}
+
+section .school_news .right .news_list ul li {
+  position: relative;
+}
+
+section .school_news .right .news_list ul li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 1.0417vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/img/noise.png");
+  opacity: 0.1;
+  z-index: -1;
+}
+
+section .school_news .right .news_list ul li a {
+  font-size: 1.5625vw;
+  margin: 0 1.5625vw;
+  color: #595555;
+}
+
+section .school_news .right .news_list ul li a:hover {
+  color: #89afdf;
+}
+
+section .school_news .right .news_list ul li .date {
+  text-align: right;
+  padding-right: 0.5208vw;
+  border-radius: 1.0417vw;
+  width: 8vw;
+  background-color: rgba(3, 30, 74, 0.5);
+}
+
+section .school_news .right .news_list ul li .date h2 {
+  color: #89afdf;
+}
+
+section .school_news .right .news_list ul li .date h4 {
+  color: #b9c1c4;
+}

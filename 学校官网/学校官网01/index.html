@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>湖南城市学院-HUNAN CITY UNIVERSITY</title>
+    <!-- 引入ico图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/title" />
+    <!--引入压缩后的css，提升加载速率 -->
+    <link rel="stylesheet" href="./src/css/basic.min.css" />
+    <link rel="stylesheet" href="./src/css/index.min.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <div class="top">
+        <div class="hncu_logo">
+          <!-- 学院logo -->
+          <img src="./src/assets/img/hncu_logo.png" alt="" />
+        </div>
+        <!-- 导航栏 -->
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="">学校概况</a>
+            </li>
+            <li>
+              <a href="">学院·平台</a>
+            </li>
+            <li>
+              <a href="">教育教学</a>
+            </li>
+            <li>
+              <a href="">科学研究</a>
+            </li>
+            <li>
+              <a href="">交流合作</a>
+            </li>
+            <li>
+              <a href="">招生就业</a>
+            </li>
+            <li>
+              <a href="">校园生活</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 登陆 -->
+        <div class="login">
+          <!-- 头像 -->
+          <div class="avatar">
+            <!-- 使用svg保证清晰度 -->
+            <img src="./src/assets/iconfont/laoshi.svg" alt="" />
+          </div>
+          <!-- 用户信息 -->
+          <div class="user_info" onclick="isShowUserInfo() ">
+            <!-- 从数据中拿到用户名 -->
+            <h3>欢迎,&nbsp; <span class="user_name"></span></h3>
+          </div>
+          <div class="dialog">
+            <img src="./src/assets/img/my_img.png" alt="" />
+            <!-- 用户信息 -->
+            <p class="user_id"></p>
+            <p class="user_name1"></p>
+            <p class="user_age"></p>
+            <p class="user_major"></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 内容 -->
+    <section>
+      <div class="banner">
+        <!-- alt：图片路径失败时替换显示内容 -->
+        <a href="#"
+          ><img class="img-slide img" src="./src/assets/img/1.jpg" alt="img1"
+        /></a>
+        <a href="#"
+          ><img class="img-slide img" src="./src/assets/img/2.jpg" alt="img1"
+        /></a>
+        <a href="#"
+          ><img class="img-slide img" src="./src/assets/img/3.jpg" alt="img1"
+        /></a>
+      </div>
+      <div class="school_news">
+        <div class="left">
+          <!-- 顶部图片 -->
+          <div class="des_img">
+            <img src="./src/assets/img/HEADLINES.png" alt="" />
+          </div>
+          <!-- 新闻图片 -->
+          <div class="news_img">
+            <img src="./src/assets/img/news.jpg" alt="" />
+            <div class="mask">元旦晚会 盛大开幕</div>
+          </div>
+          <div class="bottom_new">
+            <ul>
+              <li>
+                <a href="">1. 我校本科生在SCI二区发表高水平论文 </a>
+                <span>[2024-01-10]</span>
+              </li>
+              <li>
+                <a href="">2. 我校本科生在SCI二区发表高水平论文 </a>
+                <span>[2024-01-10]</span>
+              </li>
+              <li>
+                <a href="">3. 我校本科生在SCI二区发表高水平论文 </a>
+                <span>[2024-01-10]</span>
+              </li>
+              <li>
+                <a href="">4. 我校本科生在SCI二区发表高水平论文 </a>
+                <span>[2024-01-10]</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="news_title">
+            <p style="font-size: 50px; color: #a4a1a1">NEWS</p>
+            <p style="font-size: 30px; color: #a4a1a1; font-weight: 600">
+              <img
+                src="./src/assets/iconfont/白板.svg"
+                alt=""
+                style="width: 25px; height: 25px"
+              />
+              城院新闻
+            </p>
+          </div>
+          <div class="news_list">
+            <ul>
+              <li>
+                <a href=""
+                  >近日，我校市政与测绘工程学院建筑环境与能源应用工程专业2020级本科生彭德用...</a
+                >
+                <div class="date">
+                  <h2 style="font-size: 30px">10</h2>
+                  <h4 style="font-size: 24px">2024.01</h4>
+                </div>
+              </li>
+              <li>
+                <a href=""
+                  >近日，我校市政与测绘工程学院建筑环境与能源应用工程专业2020级本科生彭德用...</a
+                >
+                <div class="date">
+                  <h2 style="font-size: 30px">10</h2>
+                  <h4 style="font-size: 24px">2024.01</h4>
+                </div>
+              </li>
+              <li>
+                <a href=""
+                  >近日，我校市政与测绘工程学院建筑环境与能源应用工程专业2020级本科生彭德用...</a
+                >
+                <div class="date">
+                  <h2 style="font-size: 30px">10</h2>
+                  <h4 style="font-size: 24px">2024.01</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 底部 -->
+    <footer></footer>
+  </body>
+  <script src="./src/js/index.js"></script>
+</html>

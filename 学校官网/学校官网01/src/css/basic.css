@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body {
+  /* 移除默认列表样式 */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: basic_font_size;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f0eded;
+}
+
+body ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body a {
+  color: #e4e2e4;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: #0693f8;
+}
